@@ -100,6 +100,9 @@ router.delete("/self/pic", (req, res) => {
 
 });
 
+// null
+
+
 // Create a image 
 router.post("/self/pic", async (req, res) => {
 
