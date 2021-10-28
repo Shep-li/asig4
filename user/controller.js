@@ -25,7 +25,7 @@ function createImage(imageData, result) {
     let imageModel = new ImageModel({
         ...imageData
     });
-
+    console.log("imagemodel ok");
     ImageModel.createImage(imageModel, function (err, response) {
         if (err)
             result(err, response);
