@@ -94,8 +94,8 @@ function s3_upload(bucketname, filename) {
     var AWS = require('aws-sdk');
     // Set the region 
     AWS.config.update({ region: 'us-east-1' });
-    var credentials = new AWS.SharedIniFileCredentials({ profile: 'prod' });
-    AWS.config.credentials = credentials;
+    // var credentials = new AWS.SharedIniFileCredentials({ profile: 'prod' });
+    // AWS.config.credentials = credentials;
 
     // Create S3 service object
     var s3 = new AWS.S3({ apiVersion: '2006-03-01' });
@@ -131,8 +131,8 @@ function s3_delete(bucketname, filename) {
     var AWS = require('aws-sdk');
     // Set the region 
     AWS.config.update({ region: 'us-east-1' });
-    var credentials = new AWS.SharedIniFileCredentials({ profile: 'prod' });
-    AWS.config.credentials = credentials;
+    // var credentials = new AWS.SharedIniFileCredentials({ profile: 'prod' });
+    // AWS.config.credentials = credentials;
 
     var s3 = new AWS.S3();
 
