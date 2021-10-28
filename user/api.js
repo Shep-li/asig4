@@ -156,8 +156,8 @@ router.post("/self/pic", async (req, res) => {
 	// Create the image 
 	createImage(image, function (err, response) {
 		if (err) {
-			res.status(500);
-			return res.json({ status: 500, message: err });
+			res.status(502);
+			return res.json({ status: 502, message: err });
 
 		}
 
