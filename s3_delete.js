@@ -13,7 +13,6 @@ var deleteParams = {Bucket: process.argv[2], Key: ''};
 var file = process.argv[3];
 
 // Configure the file stream and obtain the upload parameters
-var fs = require('fs');
 
 
 var path = require('path');
